@@ -4,5 +4,5 @@ streamlit==1.26.0
 mlxtend
 xgboost
 scikit-learn
-sklearn==1.2.2
-pyngrok===4.1.1
+sklearn
+pyngrok
