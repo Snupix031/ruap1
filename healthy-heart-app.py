@@ -66,9 +66,7 @@ def preprocess(age,sex,cp,trtbps,restecg,chol,fbs,thalachh,exng,oldpeak,slp,caa,
         restecg=1
     elif restecg=="Possible or definite left ventricular hypertrophy":
         restecg=2
-     elif restecg=="Possible or definite left ventricular hypertrophy":
-        restecg=2
-
+    
 
     user_input=[age,sex,cp,trtbps,restecg,chol,fbs,thalachh,exng,oldpeak,slp,caa,thall]
     user_input=np.array(user_input)
