@@ -51,18 +51,22 @@ def preprocess(age,sex,cp,trtbps,restecg,chol,fbs,thalachh,exng,oldpeak,slp,caa,
     elif slp=="Downsloping: signs of unhealthy heart":
         slp=2  
  
-    if thall=="fixed defect: used to be defect but ok now":
-        thall=6
-    elif thall=="reversable defect: no proper blood movement when excercising":
-        thall=7
+    if thall==" null":
+        thall=0
+    elif thall=="fixed defect":
+        thall=1
     elif thall=="normal":
-        thall=2.31
+        thall=2
+    elif thall=="reversable defect":
+        thall=3
 
     if restecg=="Nothing to note":
         restecg=0
     elif restecg=="ST-T Wave abnormality":
         restecg=1
     elif restecg=="Possible or definite left ventricular hypertrophy":
+        restecg=2
+     elif restecg=="Possible or definite left ventricular hypertrophy":
         restecg=2
 
 
