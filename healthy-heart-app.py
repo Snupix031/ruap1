@@ -116,8 +116,8 @@ if st.button("Predict"):
     st.error('Warning! You have high risk of getting a heart attack!')
     
   else:
-   st.success(pred[0])
-    st.success('You have lower risk of getting a heart disease!')
+   
+    st.success(pred[0])
     
    
 
