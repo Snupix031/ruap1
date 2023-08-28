@@ -102,7 +102,7 @@ thalachh=st.selectbox('Maximum Heart Rate Achieved',range(1,300,1))
 exng=st.selectbox('Exercise Induced Angina',["Yes","No"])
 oldpeak=st.number_input('Oldpeak')
 slp = st.selectbox('Heart Rate Slope',("Upsloping: better heart rate with excercise(uncommon)","Flatsloping: minimal change(typical healthy heart)","Downsloping: signs of unhealthy heart"))
-caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,5,1))
+caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,3,1))
 thall=st.selectbox('Thalium Stress Result',range(1,8,1))
 
 
