@@ -5,3 +5,4 @@ mlxtend
 xgboost
 scikit-learn
 pyngrok
+pickle
