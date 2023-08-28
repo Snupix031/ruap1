@@ -112,7 +112,7 @@ pred=preprocess(age,sex,cp,trtbps,restecg,chol,fbs,thalachh,exng,oldpeak,slp,caa
 
 
 if st.button("Predict"):    
-  if pred[0] == 1:
+  if pred[0] == 0:
     st.error('Warning! You have high risk of getting a heart attack!')
     
   else:
