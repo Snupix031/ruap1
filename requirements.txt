@@ -5,6 +5,5 @@ mlxtend
 xgboost
 scikit-learn==1.2.2
 pyngrok
-base64
 
 
