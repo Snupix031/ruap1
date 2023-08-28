@@ -32,7 +32,7 @@ def preprocess(age,sex,cp,trtbps,restecg,chol,fbs,thalachh,exng,oldpeak,slp,caa,
     elif cp=="Non-anginal pain":
         cp=2
     elif cp=="Asymptomatic":
-        cp=2
+        cp=3
     
     if exng=="Yes":
         exng=1
