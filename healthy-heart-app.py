@@ -114,7 +114,7 @@ st.success(pred)
 
 
 if st.button("Predict"):    
-  if pred[0] == 0:
+  if pred[0] == 1:
     st.error('Warning! You have high risk of getting a heart attack!')
     
   else:
