@@ -38,7 +38,7 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
         exng=1
     elif exng=="No":
         exng=0
-     st.write(exng)
+    
     if fbs=="Yes":
         fbs=1
     elif fbs=="No":
@@ -106,6 +106,7 @@ caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,4,1))
 thall=st.selectbox('Thalium Stress Result',range(0,4,1))
 st.write(sex)
 st.write(cp)
+st.write(exng)
 st.write(fbs)
 st.write(slp)
 st.write(thall)
