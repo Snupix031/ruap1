@@ -16,9 +16,9 @@ st.set_page_config(page_title="Healthy Heart App",page_icon="⚕️",layout="cen
 
 
 
-#def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall):   
+def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall):   
  
-   def preprocess(sex,cp,exng, fbs, slp, thall)
+  
     # Pre-processing user input   
     if sex=="male":
         sex=1 
@@ -68,13 +68,12 @@ st.set_page_config(page_title="Healthy Heart App",page_icon="⚕️",layout="cen
         restecg=2
      
 
-    #user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
-    user_input=[sex,cp,fbs,slp,thall]
+    user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
     user_input=np.array(user_input)
     user_input=user_input.reshape(1,-1)
     user_input=scal.fit_transform(user_input)
     prediction = model.predict(user_input)
-
+ st.success(prediction)
     return prediction
 
     
@@ -113,8 +112,8 @@ thall=st.selectbox('Thalium Stress Result',range(0,4,1))
 #st.write(thall)
 #st.write(restecg)
 
-user_input=preprocess(sex,cp,exng, fbs, slp, thall )
-#pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
+
+pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
 
 st.success(user_input)
 
