@@ -69,7 +69,7 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
      
 
     user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
-    user_input=np.array(user_input1)
+    user_input=np.array(user_input)
     user_input=user_input2.reshape(1,-1)
     user_input=scal.fit_transform(user_input)
     prediction = model.predict(user_input)
@@ -104,13 +104,7 @@ oldpeak=st.number_input('Oldpeak')
 slp = st.selectbox('Heart Rate Slope',("Upsloping: better heart rate with excercise(uncommon)","Flatsloping: minimal change(typical healthy heart)","Downsloping: signs of unhealthy heart"))
 caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,4,1))
 thall=st.selectbox('Thalium Stress Result',range(0,4,1))
-#st.write(sex)
-#st.write(cp)
-#st.write(exng)
-#st.write(fbs)
-#st.write(slp)
-#st.write(thall)
-#st.write(restecg)
+
 
 
 pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
