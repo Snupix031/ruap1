@@ -68,8 +68,8 @@ def preprocess(age,sex,cp,trestbps,restecg,chol,fbs,thalach,exang,oldpeak,slope,
 
     user_input=[age,sex,cp,trestbps,restecg,chol,fbs,thalach,exang,oldpeak,slope,ca,thal]
     user_input=np.array(user_input)
-    user_input=user_input.reshape(1,-1)
-    user_input=scal.fit_transform(user_input)
+    #user_input=user_input.reshape(1,-1)
+    #user_input=scal.fit_transform(user_input)
     prediction = model.predict(user_input)
 
     return prediction
@@ -138,9 +138,3 @@ if feedback:
 
 
      
- 
-   
-   
-    
-   
-
