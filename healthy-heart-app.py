@@ -70,11 +70,11 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
 
     user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
     user_input=np.array(user_input)
-    user_input=user_input.reshape(1,-1)
-    user_input=scal.fit_transform(user_input)
-    prediction = model.predict(user_input)
+    #user_input=user_input.reshape(1,-1)
+   # user_input=scal.fit_transform(user_input)
+    #prediction = model.predict(user_input)
    
-    return prediction
+    return user_input
 
     
 
@@ -112,13 +112,13 @@ pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa
 st.success(pred[0])
 
 
-if st.button("Predict"):    
-  if pred[0] == 1:
-    st.error('Warning! You have high risk of getting a heart attack!')
+#if st.button("Predict"):    
+#  if pred[0] == 1:
+ #   st.error('Warning! You have high risk of getting a heart attack!')
     
-  else:
+  #else:
    
-    st.success(pred[0])
+  #  st.success(pred[0])
     
    
 
