@@ -68,7 +68,8 @@ st.set_page_config(page_title="Healthy Heart App",page_icon="⚕️",layout="cen
         restecg=2
      
 
-    user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
+    #user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
+    user_input=[sex,cp,fbs,slp,thall]
     user_input=np.array(user_input)
     user_input=user_input.reshape(1,-1)
     user_input=scal.fit_transform(user_input)
