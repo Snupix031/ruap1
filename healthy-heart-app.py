@@ -111,9 +111,9 @@ st.write(pred)
 
 st.write(pred[0])
 
-if st.button("Predict"):    
- if pred[0] == 1:
-   st.error('Warning! You have high risk of getting a heart attack!')
+#if st.button("Predict"):    
+# if pred[0] == 1:
+#   st.error('Warning! You have high risk of getting a heart attack!')
     
  
    
