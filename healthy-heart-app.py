@@ -16,9 +16,9 @@ st.set_page_config(page_title="Healthy Heart App",page_icon="⚕️",layout="cen
 
 
 
-def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall):   
+#def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall):   
  
-    
+   def preprocess(sex,cp,exng, fbs, slp, thall)
     # Pre-processing user input   
     if sex=="male":
         sex=1 
@@ -104,13 +104,13 @@ oldpeak=st.number_input('Oldpeak')
 slp = st.selectbox('Heart Rate Slope',("Upsloping: better heart rate with excercise(uncommon)","Flatsloping: minimal change(typical healthy heart)","Downsloping: signs of unhealthy heart"))
 caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,4,1))
 thall=st.selectbox('Thalium Stress Result',range(0,4,1))
-st.write(sex)
+#st.write(sex)
 st.write(cp)
-st.write(exng)
-st.write(fbs)
-st.write(slp)
-st.write(thall)
-st.write(restecg)
+#st.write(exng)
+#st.write(fbs)
+#st.write(slp)
+#st.write(thall)
+#st.write(restecg)
 
 user_input=preprocess(sex,cp,exng, fbs, slp, thall )
 #pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
