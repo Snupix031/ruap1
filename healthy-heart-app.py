@@ -23,7 +23,7 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
     if sex=="male":
         sex=1 
     else: sex=0
-    st.write(sex)
+    
     
     if cp=="Typical angina":
         cp=0
@@ -33,7 +33,7 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
         cp=2
     elif cp=="Asymptomatic":
         cp=3
-       st.write(cp)
+       
     if exng=="Yes":
         exng=1
     elif exng=="No":
@@ -43,14 +43,14 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
         fbs=1
     elif fbs=="No":
         fbs=0
-   st.write(fbs)
+   
     if slp=="Upsloping: better heart rate with excercise(uncommon)":
         slp=0
     elif slp=="Flatsloping: minimal change(typical healthy heart)":
           slp=1
     elif slp=="Downsloping: signs of unhealthy heart":
         slp=2  
-   st.write(slp)
+   
     if thall==" null":
         thall=0
     elif thall=="fixed defect":
@@ -59,14 +59,14 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
         thall=2
     elif thall=="reversable defect":
         thall=3
-  st.write(thall)
+  
     if restecg=="Nothing to note":
         restecg=0
     elif restecg=="ST-T Wave abnormality":
         restecg=1
     elif restecg=="Possible or definite left ventricular hypertrophy":
         restecg=2
-     st.write(restecg)
+     
 
     user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
     user_input=np.array(user_input)
@@ -104,8 +104,12 @@ oldpeak=st.number_input('Oldpeak')
 slp = st.selectbox('Heart Rate Slope',("Upsloping: better heart rate with excercise(uncommon)","Flatsloping: minimal change(typical healthy heart)","Downsloping: signs of unhealthy heart"))
 caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,4,1))
 thall=st.selectbox('Thalium Stress Result',range(0,4,1))
-
-
+st.write(sex)
+st.write(cp)
+st.write(fbs)
+st.write(slp)
+st.write(thall)
+st.write(restecg)
 
 #user_input=preprocess(sex,cp,exng, fbs, slp, thall )
 pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
