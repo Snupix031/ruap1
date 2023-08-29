@@ -112,14 +112,14 @@ st.write(slp)
 st.write(thall)
 st.write(restecg)
 
-#user_input=preprocess(sex,cp,exng, fbs, slp, thall )
-pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
+user_input=preprocess(sex,cp,exng, fbs, slp, thall )
+#pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
 
-st.success(pred)
+st.success(user_input)
 
 
 if st.button("Predict"):    
-  if pred[0] == 1:
+  if user_input == 1:
     st.error('Warning! You have high risk of getting a heart attack!')
     
   else:
