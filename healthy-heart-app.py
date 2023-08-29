@@ -115,7 +115,7 @@ thall=st.selectbox('Thalium Stress Result',range(0,4,1))
 
 pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
 
-st.success(user_input)
+
 
 
 if st.button("Predict"):    
