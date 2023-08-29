@@ -109,7 +109,7 @@ st.write(chol)
 
 pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
 
-st.success(pred[0])
+st.success(pred)
 
 
 #if st.button("Predict"):    
