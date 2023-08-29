@@ -103,7 +103,7 @@ oldpeak=st.number_input('Oldpeak')
 slp = st.selectbox('Heart Rate Slope',("Upsloping: better heart rate with excercise(uncommon)","Flatsloping: minimal change(typical healthy heart)","Downsloping: signs of unhealthy heart"))
 caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,4,1))
 thall=st.selectbox('Thalium Stress Result',range(0,4,1))
-st.write(chol)
+
 
 
 pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
