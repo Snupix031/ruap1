@@ -106,7 +106,7 @@ slp = st.selectbox('Heart Rate Slope',("Upsloping: better heart rate with excerc
 caa=st.selectbox('Number of Major Vessels Colored by Flourosopy',range(0,4,1))
 thall=st.selectbox('Thalium Stress Result',range(0,4,1))
 #st.write(sex)
-st.write(cp)
+#st.write(cp)
 #st.write(exng)
 #st.write(fbs)
 #st.write(slp)
