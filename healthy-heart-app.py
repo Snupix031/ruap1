@@ -73,7 +73,7 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
     user_input=user_input.reshape(1,-1)
     user_input=scal.fit_transform(user_input)
     prediction = model.predict(user_input)
- st.success(prediction)
+     print(prediction)
     return prediction
 
     
