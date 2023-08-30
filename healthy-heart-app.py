@@ -6,7 +6,7 @@ import pickle as pkl
 from sklearn.preprocessing import MinMaxScaler
 scal=MinMaxScaler()
 #Load the saved model
-model=pkl.load(open("final_model.p","rb"))
+model=pkl.load(open("final_model4.p","rb"))
 
 
 
