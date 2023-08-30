@@ -104,7 +104,7 @@ thall=st.selectbox('Thalium Stress Result',range(0,4,1))
 
 
 
-pred=preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall)
+pred=preprocess(60,0,0,150,258,0,0,157,0,2.6,1,2,3)
 
 st.write(pred[0])
 
