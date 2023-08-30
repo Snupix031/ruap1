@@ -71,7 +71,7 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
     user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
     user_input=np.array(user_input)
     user_input=user_input.reshape(1,-1)
-    user_input=scal.fit_transform(user_input)
+    #user_input=scal.fit_transform(user_input)
     prediction = model.predict(user_input)
    
     return  prediction
@@ -106,7 +106,7 @@ thall=st.selectbox('Thalium Stress Result',range(0,4,1))
 
 pred=preprocess(55,1,0,140,217,0,1,111,1,5.6,0,0,3)
 
-st.write(pred[0])
+st.write(pred)
 
 
 if st.button("Predict"):    
