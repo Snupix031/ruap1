@@ -69,6 +69,9 @@ def preprocess(age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,
      
 
     user_input=[age,sex,cp,trtbps,chol,fbs,restecg,thalachh,exng,oldpeak,slp,caa,thall]
+    for i in range(len(user_input)):
+    # convert each item to int type
+    user_input[i] = float(user_input[i])
     user_input=np.array(user_input)
     user_input=user_input.reshape(1,-1)
     #user_input=scal.fit_transform(user_input)
