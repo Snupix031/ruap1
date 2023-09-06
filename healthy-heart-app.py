@@ -80,7 +80,7 @@ def preprocess(age,sexP,cpP,trtbps,chol,fbsP,restecgP,thalachh,exngP,oldpeak,slp
     # front end elements of the web page 
 html_temp = """ 
     <div style ="background-color:pink;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Healthy Heart App</h1> 
+    <h1 style ="color:black;text-align:center;">Heart attack prediction App</h1> 
     </div> 
     """
       
