@@ -12,7 +12,7 @@ model=pkl.load(open("final_model3.p","rb"))
 
 
 
-st.set_page_config(page_title="Healthy Heart App",page_icon="⚕️",layout="centered",initial_sidebar_state="expanded")
+st.set_page_config(page_title="Heart attack prediction App",page_icon="⚕️",layout="centered",initial_sidebar_state="expanded")
 
 
 
